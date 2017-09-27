@@ -1,6 +1,6 @@
 {
   "name": "@splytech-io/aerospike",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "aerospike wrapper",
   "main": "index.js",
   "scripts": {

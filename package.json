@@ -1,0 +1,19 @@
+{
+  "name": "@splytech-io/aerospike",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aerospike",
+    "layer"
+  ],
+  "author": "Andrius Skerla",
+  "license": "ISC",
+  "dependencies": {
+    "@rainder/config": "^0.1.1",
+    "aerospike": "^2.7.2"
+  }
+}

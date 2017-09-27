@@ -1,7 +1,7 @@
 {
   "name": "@splytech-io/aerospike",
   "version": "0.0.1",
-  "description": "",
+  "description": "aerospike wrapper",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,14 @@
   "dependencies": {
     "@rainder/config": "^0.1.1",
     "aerospike": "^2.7.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/splytech-io/node-aerospike.git"
+  },
+  "bugs": {
+    "url": "https://github.com/splytech-io/node-aerospike/issues"
+  },
+  "homepage": "https://github.com/splytech-io/node-aerospike#readme"
 }

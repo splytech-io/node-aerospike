@@ -1,5 +1,2 @@
 node_modules
 .idea
-*.d.ts
-*.js
-*.map

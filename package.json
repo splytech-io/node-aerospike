@@ -1,22 +1,49 @@
 {
   "name": "@splytech-io/aerospike",
-  "version": "0.1.0",
-  "description": "aerospike wrapper",
+  "version": "0.2.0",
+  "description": "Splyt Aerospike Client",
   "main": "index.js",
+  "typings": "index.d.ts",
+  "dependencies": {
+    "aerospike": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.7",
+    "tslint": "^5.9.1",
+    "tslint-eslint-rules": "^5.1.0",
+    "typescript": "^2.7.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "tslint --project .",
+    "lint:fix": "tslint --project . --fix",
+    "build": "tsc",
+    "prepublish": "npm run lint && npm run build"
   },
   "keywords": [
-    "aerospike",
-    "layer"
+    "aerospike"
   ],
   "author": "Andrius Skerla",
   "license": "ISC",
-  "dependencies": {
-    "@rainder/config": "^0.1.1",
-    "aerospike": "^2.7.2"
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      ".git",
+      "node_modules/**/node_modules"
+    ],
+    "verbose": true,
+    "execMap": {
+      "ts": "ts-node"
+    },
+    "watch": [
+      "examples/*.ts",
+      "*.ts",
+      "index.ts"
+    ],
+    "ext": "ts"
   },
-  "devDependencies": {},
+  "directories": {
+    "example": "examples"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/splytech-io/node-aerospike.git"

@@ -1,6 +1,6 @@
 {
   "name": "@splytech-io/aerospike",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "Splyt Aerospike Client",
   "main": "index.js",
   "typings": "index.d.ts",
@@ -23,7 +23,7 @@
     "aerospike"
   ],
   "author": "Andrius Skerla",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "nodemonConfig": {
     "restartable": "rs",
     "ignore": [

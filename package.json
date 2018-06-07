@@ -1,9 +1,9 @@
 {
   "name": "@splytech-io/aerospike",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Splyt Aerospike Client",
-  "main": "index.js",
-  "typings": "index.d.ts",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
   "dependencies": {
     "aerospike": "^3.2.0"
   },
@@ -16,8 +16,8 @@
   "scripts": {
     "lint": "tslint --project .",
     "lint:fix": "tslint --project . --fix",
-    "build": "tsc",
-    "prepublish": "npm run lint && npm run build"
+    "build": "tsc ",
+    "prepublishOnly": "npm run lint && npm run build"
   },
   "keywords": [
     "aerospike"

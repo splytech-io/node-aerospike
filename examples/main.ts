@@ -1,4 +1,4 @@
-import { Aerospike } from '../index';
+import { Aerospike } from '@splytech-io/aerospike';
 
 const connection = new Aerospike.Connection();
 

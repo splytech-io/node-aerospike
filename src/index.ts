@@ -644,7 +644,7 @@ export namespace Aerospike {
         throw new Error('not connected');
       }
 
-      await this.client.close();
+      await this.client.close(false);
     }
 
     /**

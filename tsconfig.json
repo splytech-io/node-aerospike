@@ -20,10 +20,10 @@
       "*": [
         "types/*"
       ]
-    }
+    },
+    "outDir": "build"
   },
-  "exclude": [
-    "node_modules",
-    "examples"
+  "include": [
+    "src"
   ]
 }

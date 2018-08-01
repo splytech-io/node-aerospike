@@ -1,14 +1,19 @@
 {
   "name": "@splytech-io/aerospike",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Splyt Aerospike Client",
   "main": "build/index.js",
   "typings": "build/index.d.ts",
   "dependencies": {
-    "aerospike": "^3.2.0"
+    "aerospike": "3.4.0"
   },
   "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.5",
     "@types/node": "^9.4.7",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.0",
     "tslint": "^5.9.1",
     "tslint-eslint-rules": "^5.1.0",
     "typescript": "^2.7.2"

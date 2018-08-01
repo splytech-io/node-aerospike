@@ -1,6 +1,6 @@
 {
   "name": "@splytech-io/aerospike",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Splyt Aerospike Client",
   "main": "build/index.js",
   "typings": "build/index.d.ts",

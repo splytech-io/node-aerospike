@@ -637,14 +637,14 @@ export namespace Aerospike {
 
     /**
      *
-     * @returns {Promise<void>}
+     * @param releaseEventLoop
      */
-    async close() {
+    async close(releaseEventLoop?: boolean) {
       if (!this.client) {
         throw new Error('not connected');
       }
 
-      await this.client.close(false);
+      await this.client.close(releaseEventLoop);
     }
 
     /**

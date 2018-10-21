@@ -585,6 +585,19 @@ export namespace Aerospike {
 
     /**
      *
+     * @param {string} key
+     * @param {Aerospike.WritePolicy} policy
+     * @returns {Promise<void>}
+     */
+    async remove(key: string, policy?: WritePolicy): Promise<void> {
+      return this.client.getClient().remove(
+        new Aerospike.Key(this.options.namespace, this.options.set, key),
+        policy,
+      );
+    }
+
+    /**
+     *
      * @param {number} beforeNanos
      * @param {Aerospike.InfoPolicy} policy
      * @returns {Promise<void>}

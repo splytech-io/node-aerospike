@@ -178,6 +178,13 @@ export namespace Aerospike {
 
     connect: (config?: Config) => Promise<AerospikeClient>;
 
+    lists: {
+      append: (bin: string, value: any, policy?: WritePolicy) => Operation;
+      appendItems: (bin: string, value: any[], policy?: WritePolicy) => Operation;
+      clear: (bin: string) => Operation;
+      get: (bin: string, index: number) => Operation;
+    };
+
     policy: {
       // ApplyPolicy: () => any;
       // BatchPolicy: () => any;
@@ -686,5 +693,6 @@ export namespace Aerospike {
   export const Status = AS.status;
   export const Operations = AS.operations;
   export const Policy = AS.policy;
+  export const Lists = AS.lists;
   export const connection = new Connection();
 }

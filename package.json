@@ -15,6 +15,7 @@
     "husky": "^1.1.2",
     "lint-staged": "^7.3.0",
     "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
     "ts-node": "^7.0.0",
     "tslint": "^5.9.1",
     "tslint-eslint-rules": "^5.1.0",
@@ -24,6 +25,7 @@
     "lint": "tslint --project .",
     "lint:fix": "tslint --project . --fix",
     "build": "tsc ",
+    "test": "nyc mocha --require ts-node/register 'src/*.spec.ts'",
     "prepublishOnly": "npm run lint && npm run build"
   },
   "keywords": [
@@ -62,13 +64,29 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "npm run build"
+      "pre-push": "npm run build && npm run test"
     }
   },
   "lint-staged": {
     "*.ts": [
       "tslint -p . --fix",
       "git add"
+    ]
+  },
+  "nyc": {
+    "exclude": [
+      "**/*.spec.ts"
+    ],
+    "include": [
+      "src/*.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "all": true,
+    "reporter": [
+      "html",
+      "text-summary"
     ]
   }
 }

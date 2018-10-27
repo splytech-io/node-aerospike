@@ -3,3 +3,5 @@ node_modules
 *.d.ts
 *.js
 *.map
+coverage
+.nyc_output

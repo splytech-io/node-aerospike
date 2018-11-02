@@ -1,11 +1,11 @@
 {
   "name": "@splytech-io/aerospike",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Splyt Aerospike Client",
   "main": "build/index.js",
   "typings": "build/index.d.ts",
   "dependencies": {
-    "aerospike": "^3.7.1"
+    "aerospike": "3.4.0"
   },
   "devDependencies": {
     "@types/chai": "^4.1.4",
